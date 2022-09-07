@@ -1,0 +1,32 @@
+.footer {
+    height: 134px;
+    &_seperator {
+       margin-bottom: 34px;
+    }
+    &_content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &_left{
+            nav{
+                margin-bottom: 30px;
+            }
+            p{
+                font-size: 0.875rem;
+            }
+        }
+        &_right{
+            p{
+                font-size: 0.875rem;
+                margin-bottom: 15px;
+                font-weight: 500;
+            }
+            a{
+                font-size: 0.875rem;
+                text-decoration: none;
+                font-weight: 400;
+                color: #000;
+            }
+        }
+    }
+}

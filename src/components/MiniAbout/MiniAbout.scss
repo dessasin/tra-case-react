@@ -1,0 +1,47 @@
+@import "../../Style/Colors.scss";
+.mini_about {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-between;
+    gap: 64px;
+    font-size: 1rem;
+    margin: 135px 0 100px 0;
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
+    &_content {
+        p {
+            @media (max-width: 1024px) {
+                width: 100%;
+                height: fit-content;
+            }
+            width: 728px;
+            height: 72px;
+            font-size: 1em;
+            margin-bottom: 20px;
+            line-height: 1.5em;
+        }
+        ul {
+            list-style: none;
+            margin-bottom: 40px;
+
+            li {
+                position: relative;
+                font-weight: 400;
+                font-size: 1em;
+                margin-bottom: 2px;
+                width: 100%;
+                &::before {
+                    content: "\2022";
+                    color: $virgin-olive-green;
+                    font-weight: 600;
+                    display: inline-block;
+                    font-size: 1.2em;
+                    width: 1em;
+                    margin-left: -1.2em;
+                }
+            }
+        }
+    }
+}

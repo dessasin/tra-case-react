@@ -1,0 +1,36 @@
+@import '../../Style/Colors.scss';
+.mobile_menu{
+    width: 0;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    display: none;
+    z-index: 99;
+    background-color: $bold-red;
+    height: 100vh;
+    @media (max-width: 900px) {
+        display: none;
+    }
+    &_item{
+        display: flex;
+        align-items: center;
+        // height: 4.5rem;
+        padding: 24px;
+        justify-content: space-between  ;
+        border-bottom: 1px solid $dark-border;
+        img{
+            width: 24px;
+            height: 24px;
+        }
+        .navlink{
+            color:$white;
+        }
+    }
+}
+
+.mobile_menu-active{
+    transition: all 200ms ease-in-out;
+    width: 100vw;
+    display: block;
+
+}

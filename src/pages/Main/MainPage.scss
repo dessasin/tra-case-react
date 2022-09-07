@@ -1,0 +1,40 @@
+#main_page{
+    padding:50px 200px 0 200px;
+    @media (max-width: 1024px) {
+        padding:50px 100px 0 100px;
+       }
+    @media (max-width: 540px) {
+        padding:50px 50px 0 50px;
+       }
+    @media (max-width: 340px) {
+        padding:50px 25px 0 25px;
+       }
+    .main_illustration{
+        position: absolute;
+        z-index: auto;
+
+        &:first-child{
+            max-width: 272px;
+            @media (max-width: 1024px) {
+                width: 100px;
+            }
+            @media (max-width: 640px) {
+                width: 80px;
+            }
+            top: 62px;
+            left: 0;
+        }
+        &:nth-child(2){
+            @media (max-width: 1024px) {
+                width: 200px;
+            }
+            @media (max-width: 640px) {
+                width: 140px;
+            }
+            // max-width: 300px; // TODO: its looks huge should be fixed
+            top: 127px;
+            right: 0;
+        }
+    }
+
+}

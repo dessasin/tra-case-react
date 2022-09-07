@@ -1,0 +1,15 @@
+@import './Style/Reset.scss';
+@import './Style/Colors.scss';
+@import './Style/Font.scss';
+
+html{
+    @media (max-width: 900px) {
+        font-size: 14px;
+    }
+    @media (max-width: 640px) {
+        font-size: 11px;
+    }
+}
+body{
+    background-color: #F4F4EC;
+}

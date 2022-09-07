@@ -1,0 +1,52 @@
+@import "../../Style/Colors.scss";
+
+#intro_slider_container {
+    #intro_slider {
+        display: flex;
+        align-items: center;
+        @media (max-width: 1024px) {
+           width: 100%;
+        }
+        .nav_button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            width: fit-content;
+            height:fit-content;
+            img {
+                width: 70px;
+                height: 70px;
+                @media (max-width: 1024px) {
+                    width: 35px;
+                    height:35px;
+                }
+            }
+            &:last-child {
+                img {
+                    transform: rotate(-180deg);
+                }
+            }
+        }
+        .swiper{
+            width: calc(100% - 140px)!important;
+            @media (max-width: 1024px) {
+                width:100%!important;
+            }
+        }
+    }
+}
+
+
+.swiper-pagination-bullet {
+    width: 20px!important;
+    height: 10px!important;
+    border-radius: 10px!important;
+    opacity: 1;
+    background: $swiper-bullet!important;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 60px!important;
+    background: $swiper-bullet!important;
+  }
